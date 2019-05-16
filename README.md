@@ -10,6 +10,7 @@ Implement a simple orders and payments system. It's partially implemented alread
 * Order has one charge.
 * After a successful payment the payment gateway sends a webhook with a charge id to confirm the payment.
 * The payment information has to be stored. 
+* There's neither authorization nor authentication, users are being identified just by posting an email. 
 
 There's a spec that tests the whole flow and it should be self-explanatory.
 If in doubt, do as you feel, change the existing code if necessary and choose the simples possible solution.
