@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple coding assesment app. After cloning the repo run `bundle install` and `rake db:seed`.  
 
-Things you may want to cover:
+# Task 1
+Implement a simple orders and payments system. It's partially implemented already, but there are some database tables, models, relations and fields missing. 
 
-* Ruby version
+* Order has many order items. 
+* Order item has one service type and quantity.
+* Order has one charge.
+* After a successful payment the payment gateway sends a webhook with a charge id to confirm the payment.
+* The payment information has to be stored. 
 
-* System dependencies
+There's a spec that tests the whole flow and it should be self-explanatory.
+If in doubt, do as you feel, change the existing code if necessary and choose the simples possible solution.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
